@@ -1,0 +1,9 @@
+{
+    "burger": {
+        "protein": 17.0,
+        "fiber": 1.5,
+        "calories": 295,
+        "carbohydrates": 30.0,
+        "fat": 12.0
+    }
+}

@@ -1,0 +1,246 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Food Classification Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <aside class="left">
+        <div class="dev-card">
+            <img src="/static/images/developer.png" alt="developer" class="dev-img">
+            <h3 class="dev-name">Developed by: Mahesh Porla</h3>
+            <p class="dev-skills">Skills:Deep Learning , Computer Vision ,Python,Sql,Machine Learning, Flask</p>
+        </div>
+
+        <div class="panel-block">
+            <h4 class="section-title">Select Class</h4>
+            <select id="classDropdown" class="full-width"></select>
+        </div>
+
+        <div class="panel-block">
+            <h4 class="section-title">Class Details</h4>
+            <pre id="classDetails" class="details-box">Select a class to see details.</pre>
+        </div>
+    </aside>
+
+    <!-- MIDDLE PANEL -->
+    <main class="middle">
+        <div class="upload-card">
+            <h2>Food Classification using Multi Models </h2>
+            <input type="file" id="imgFile" accept="image/*" class="file-input">
+            <div class="img-preview-wrap">
+                <img id="previewImg" src="/static/temp.jpg" alt="preview" class="preview-img">
+            </div>
+            <button id="uploadBtn" class="btn primary">Upload Image</button>
+        </div>
+
+        <div class="model-card">
+            <h3>Select Model</h3>
+            <label><input type="radio" name="modelType" value="custom_models" checked> Custom Model</label><br>
+            <label><input type="radio" name="modelType" value="vgg16_models"> VGG16 Model</label><br>
+            <label><input type="radio" name="modelType" value="resnet50_models"> ResNet50 Model</label><br>
+            <button id="predictBtn" class="btn accent" style="margin-top:10px;">Predict</button>
+        </div>
+    </main>
+
+    <!-- RIGHT PANEL -->
+    <section class="right">
+        <h2>Prediction Output</h2>
+
+        <div class="result-grid">
+            <div><strong>Selected Class:</strong> <span id="out_selected">-</span></div>
+            <div><strong>Predicted Class:</strong> <span id="out_predicted">-</span></div>
+            <div><strong>Model Used:</strong> <span id="out_model">-</span></div>
+            <div><strong>Model File:</strong> <span id="out_model_file">-</span></div>
+            <div><strong>Confidence:</strong> <span id="out_conf">-</span></div>
+            <div><strong>Accuracy:</strong> <span id="out_acc">-</span></div>
+            <div><strong>Precision:</strong> <span id="out_pre">-</span></div>
+            <div><strong>Recall:</strong> <span id="out_rec">-</span></div>
+        </div>
+
+        <div class="panel-block">
+            <h4 class="section-title">Confusion Matrix</h4>
+            <div id="cmTable" class="cm-box">No data</div>
+        </div>
+
+        <div class="panel-block">
+            <h4 class="section-title">Classification Report (Predicted class only)</h4>
+            <div id="reportBox" class="report-box">No report</div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+/* Same JS as before except model_group appended */
+
+window.bigMetrics = null;
+window.classList = null;
+window.currentClass = null;
+
+fetch("/list_json_files")
+.then(r => r.json())
+.then(files => {
+    const dd = document.getElementById("classDropdown");
+    dd.innerHTML = "<option value=''>-- Select Class --</option>";
+    files.forEach(f => {
+        const label = f.replace(".json", "");
+        const opt = document.createElement("option");
+        opt.value = f;
+        opt.textContent = label;
+        dd.appendChild(opt);
+    });
+});
+
+document.getElementById("classDropdown").addEventListener("change", function(){
+    const file = this.value;
+    if (!file) return;
+
+    const cls = file.replace(".json", "");
+    window.currentClass = cls;
+
+    fetch(`/get_per_class?file=${encodeURIComponent(file)}`)
+    .then(r => r.json())
+    .then(data => {
+        document.getElementById("classDetails").innerText = JSON.stringify(data, null, 2);
+    });
+
+    fetch(`/find_big_json?class=${encodeURIComponent(cls)}`)
+    .then(r => r.json())
+    .then(data => {
+        if (!data || !data.metrics) {
+            window.bigMetrics = null;
+            window.classList = null;
+            return;
+        }
+        window.bigMetrics = data.metrics;
+        window.classList = data.class_list;
+    });
+});
+
+const imgInput = document.getElementById("imgFile");
+const previewImg = document.getElementById("previewImg");
+
+imgInput.addEventListener("change", function(){
+    const file = this.files[0];
+    if (!file) return;
+    previewImg.src = URL.createObjectURL(file);
+});
+
+document.getElementById("uploadBtn").addEventListener("click", function(){
+    const file = imgInput.files[0];
+    if (!file) return alert("Choose an image first");
+
+    const fd = new FormData();
+    fd.append("image", file);
+
+    fetch("/upload", { method: "POST", body: fd })
+    .then(r => r.json())
+    .then(resp => {
+        if (resp.status === "ok") {
+            previewImg.src = "/static/temp.jpg?" + new Date().getTime();
+        }
+    });
+});
+
+document.getElementById("predictBtn").addEventListener("click", function(){
+    if (!window.currentClass) return alert("Select a class first.");
+
+    const payload = {
+        selected_class: window.currentClass,
+        model_group: document.querySelector("input[name='modelType']:checked").value
+    };
+
+    fetch("/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+    })
+    .then(r => r.json())
+    .then(showOutput);
+});
+
+function showOutput(res) {
+    if (res.error) return alert(res.error);
+
+    document.getElementById("out_selected").innerText = res.selected_class;
+    document.getElementById("out_predicted").innerText = res.predicted_class;
+    document.getElementById("out_model").innerText = res.model_used;
+    document.getElementById("out_model_file").innerText = res.model_name;
+    document.getElementById("out_conf").innerText = res.confidence;
+    document.getElementById("out_acc").innerText = res.accuracy;
+    document.getElementById("out_pre").innerText = res.precision;
+    document.getElementById("out_rec").innerText = res.recall;
+
+    renderConfusionMatrix(res.confusion_matrix, res.selected_class, res.predicted_class);
+    renderSingleClassReport(res.predicted_class, res.classification_report || {});
+}
+
+function renderConfusionMatrix(cm, selectedClass, predictedClass) {
+    const box = document.getElementById("cmTable");
+    if (!cm) return box.innerHTML = "No confusion matrix";
+
+    let html = "<table class='cm-table'>";
+    for (let i = 0; i < cm.length; i++) {
+        html += "<tr>";
+        for (let j = 0; j < cm[i].length; j++) {
+            html += `<td>${cm[i][j]}</td>`;
+        }
+        html += "</tr>";
+    }
+    html += "</table>";
+    box.innerHTML = html;
+}
+
+function renderSingleClassReport(predictedClass, report) {
+    const box = document.getElementById("reportBox");
+    if (!report[predictedClass]) {
+        box.innerHTML = "No report for this class";
+        return;
+    }
+    const r = report[predictedClass];
+    box.innerHTML = `
+        <table class="report-table">
+            <tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1</th><th>Support</th></tr>
+            <tr>
+                <td>${predictedClass}</td>
+                <td>${(r.precision || 0).toFixed(3)}</td>
+                <td>${(r.recall || 0).toFixed(3)}</td>
+                <td>${(r["f1-score"] || 0).toFixed(3)}</td>
+                <td>${r.support || 0}</td>
+            </tr>
+        </table>
+    `;
+}
+</script>
+<script>
+// Ripple Effect on Buttons
+document.querySelectorAll(".btn").forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        const ripple = document.createElement("span");
+        ripple.classList.add("ripple");
+        const rect = this.getBoundingClientRect();
+        ripple.style.left = (e.clientX - rect.left) + "px";
+        ripple.style.top = (e.clientY - rect.top) + "px";
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+    });
+});
+
+// Shimmer effect when prediction is loading
+const predictBtn = document.getElementById("predictBtn");
+predictBtn.addEventListener("click", function () {
+    document.querySelector(".right").classList.add("loading-shimmer");
+    setTimeout(() => {
+        document.querySelector(".right").classList.remove("loading-shimmer");
+    }, 1200); // shimmer for 1.2 sec
+});
+</script>
+
+</body>
+</html>

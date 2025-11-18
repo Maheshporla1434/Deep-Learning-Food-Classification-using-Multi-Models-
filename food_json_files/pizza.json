@@ -1,0 +1,9 @@
+{
+    "pizza": {
+        "protein": 11.0,
+        "fiber": 2.5,
+        "calories": 266,
+        "carbohydrates": 33.0,
+        "fat": 10.0
+    }
+}

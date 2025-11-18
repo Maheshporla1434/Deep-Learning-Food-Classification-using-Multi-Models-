@@ -1,0 +1,9 @@
+{
+    "jalebi": {
+        "protein": 0.5,
+        "fiber": 0.1,
+        "calories": 150,
+        "carbohydrates": 35.0,
+        "fat": 4.0
+    }
+}

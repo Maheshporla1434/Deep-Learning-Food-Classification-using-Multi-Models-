@@ -1,0 +1,9 @@
+{
+    "Sandwich": {
+        "protein": 12.0,
+        "fiber": 3.0,
+        "calories": 250,
+        "carbohydrates": 30.0,
+        "fat": 8.0
+    }
+}

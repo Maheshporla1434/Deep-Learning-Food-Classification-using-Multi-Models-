@@ -1,0 +1,9 @@
+{
+    "chai": {
+        "protein": 1.0,
+        "fiber": 0.0,
+        "calories": 120,
+        "carbohydrates": 20.0,
+        "fat": 4.0
+    }
+}

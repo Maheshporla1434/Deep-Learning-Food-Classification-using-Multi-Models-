@@ -1,0 +1,9 @@
+{
+    "chapati": {
+        "protein": 3.0,
+        "fiber": 2.0,
+        "calories": 120,
+        "carbohydrates": 18.0,
+        "fat": 4.0
+    }
+}

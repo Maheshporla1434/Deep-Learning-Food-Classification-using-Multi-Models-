@@ -1,0 +1,2055 @@
+{
+    "Baked Potato": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3148148148148148,
+        "precision": 0.3402061855670103,
+        "recall": 0.3055555555555556,
+        "true_positive": 33,
+        "true_negative": 152,
+        "false_positive": 64,
+        "false_negative": 75,
+        "confusion_matrix": [
+            [
+                33,
+                2,
+                73
+            ],
+            [
+                30,
+                2,
+                76
+            ],
+            [
+                34,
+                7,
+                67
+            ]
+        ],
+        "classification_report": {
+            "Baked Potato": {
+                "precision": 0.3402061855670103,
+                "recall": 0.3055555555555556,
+                "f1-score": 0.32195121951219513,
+                "support": 108.0
+            },
+            "Crispy Chicken": {
+                "precision": 0.18181818181818182,
+                "recall": 0.018518518518518517,
+                "f1-score": 0.03361344537815126,
+                "support": 108.0
+            },
+            "Donut": {
+                "precision": 0.3101851851851852,
+                "recall": 0.6203703703703703,
+                "f1-score": 0.41358024691358025,
+                "support": 108.0
+            },
+            "accuracy": 0.3148148148148148,
+            "macro avg": {
+                "precision": 0.2774031841901257,
+                "recall": 0.3148148148148148,
+                "f1-score": 0.2563816372679755,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.2774031841901258,
+                "recall": 0.3148148148148148,
+                "f1-score": 0.2563816372679755,
+                "support": 324.0
+            }
+        }
+    },
+    "Crispy Chicken": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3148148148148148,
+        "precision": 0.18181818181818182,
+        "recall": 0.018518518518518517,
+        "true_positive": 2,
+        "true_negative": 207,
+        "false_positive": 9,
+        "false_negative": 106,
+        "confusion_matrix": [
+            [
+                33,
+                2,
+                73
+            ],
+            [
+                30,
+                2,
+                76
+            ],
+            [
+                34,
+                7,
+                67
+            ]
+        ],
+        "classification_report": {
+            "Baked Potato": {
+                "precision": 0.3402061855670103,
+                "recall": 0.3055555555555556,
+                "f1-score": 0.32195121951219513,
+                "support": 108.0
+            },
+            "Crispy Chicken": {
+                "precision": 0.18181818181818182,
+                "recall": 0.018518518518518517,
+                "f1-score": 0.03361344537815126,
+                "support": 108.0
+            },
+            "Donut": {
+                "precision": 0.3101851851851852,
+                "recall": 0.6203703703703703,
+                "f1-score": 0.41358024691358025,
+                "support": 108.0
+            },
+            "accuracy": 0.3148148148148148,
+            "macro avg": {
+                "precision": 0.2774031841901257,
+                "recall": 0.3148148148148148,
+                "f1-score": 0.2563816372679755,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.2774031841901258,
+                "recall": 0.3148148148148148,
+                "f1-score": 0.2563816372679755,
+                "support": 324.0
+            }
+        }
+    },
+    "Donut": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3148148148148148,
+        "precision": 0.3101851851851852,
+        "recall": 0.6203703703703703,
+        "true_positive": 67,
+        "true_negative": 67,
+        "false_positive": 149,
+        "false_negative": 41,
+        "confusion_matrix": [
+            [
+                33,
+                2,
+                73
+            ],
+            [
+                30,
+                2,
+                76
+            ],
+            [
+                34,
+                7,
+                67
+            ]
+        ],
+        "classification_report": {
+            "Baked Potato": {
+                "precision": 0.3402061855670103,
+                "recall": 0.3055555555555556,
+                "f1-score": 0.32195121951219513,
+                "support": 108.0
+            },
+            "Crispy Chicken": {
+                "precision": 0.18181818181818182,
+                "recall": 0.018518518518518517,
+                "f1-score": 0.03361344537815126,
+                "support": 108.0
+            },
+            "Donut": {
+                "precision": 0.3101851851851852,
+                "recall": 0.6203703703703703,
+                "f1-score": 0.41358024691358025,
+                "support": 108.0
+            },
+            "accuracy": 0.3148148148148148,
+            "macro avg": {
+                "precision": 0.2774031841901257,
+                "recall": 0.3148148148148148,
+                "f1-score": 0.2563816372679755,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.2774031841901258,
+                "recall": 0.3148148148148148,
+                "f1-score": 0.2563816372679755,
+                "support": 324.0
+            }
+        }
+    },
+    "Fries": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3333333333333333,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 216,
+        "false_positive": 0,
+        "false_negative": 108,
+        "confusion_matrix": [
+            [
+                0,
+                108,
+                0
+            ],
+            [
+                0,
+                108,
+                0
+            ],
+            [
+                0,
+                108,
+                0
+            ]
+        ],
+        "classification_report": {
+            "Fries": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "Hot Dog": {
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "f1-score": 0.5,
+                "support": 108.0
+            },
+            "Sandwich": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "accuracy": 0.3333333333333333,
+            "macro avg": {
+                "precision": 0.1111111111111111,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.16666666666666666,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.1111111111111111,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.16666666666666666,
+                "support": 324.0
+            }
+        }
+    },
+    "Hot Dog": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3333333333333333,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "true_positive": 108,
+        "true_negative": 0,
+        "false_positive": 216,
+        "false_negative": 0,
+        "confusion_matrix": [
+            [
+                0,
+                108,
+                0
+            ],
+            [
+                0,
+                108,
+                0
+            ],
+            [
+                0,
+                108,
+                0
+            ]
+        ],
+        "classification_report": {
+            "Fries": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "Hot Dog": {
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "f1-score": 0.5,
+                "support": 108.0
+            },
+            "Sandwich": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "accuracy": 0.3333333333333333,
+            "macro avg": {
+                "precision": 0.1111111111111111,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.16666666666666666,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.1111111111111111,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.16666666666666666,
+                "support": 324.0
+            }
+        }
+    },
+    "Sandwich": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3333333333333333,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 216,
+        "false_positive": 0,
+        "false_negative": 108,
+        "confusion_matrix": [
+            [
+                0,
+                108,
+                0
+            ],
+            [
+                0,
+                108,
+                0
+            ],
+            [
+                0,
+                108,
+                0
+            ]
+        ],
+        "classification_report": {
+            "Fries": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "Hot Dog": {
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "f1-score": 0.5,
+                "support": 108.0
+            },
+            "Sandwich": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "accuracy": 0.3333333333333333,
+            "macro avg": {
+                "precision": 0.1111111111111111,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.16666666666666666,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.1111111111111111,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.16666666666666666,
+                "support": 324.0
+            }
+        }
+    },
+    "apple_pie": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.4444444444444444,
+        "precision": 0.40458015267175573,
+        "recall": 0.9814814814814815,
+        "true_positive": 106,
+        "true_negative": 60,
+        "false_positive": 156,
+        "false_negative": 2,
+        "confusion_matrix": [
+            [
+                21,
+                11,
+                76
+            ],
+            [
+                11,
+                17,
+                80
+            ],
+            [
+                1,
+                1,
+                106
+            ]
+        ],
+        "classification_report": {
+            "Taco": {
+                "precision": 0.6363636363636364,
+                "recall": 0.19444444444444445,
+                "f1-score": 0.2978723404255319,
+                "support": 108.0
+            },
+            "Taquito": {
+                "precision": 0.5862068965517241,
+                "recall": 0.1574074074074074,
+                "f1-score": 0.24817518248175183,
+                "support": 108.0
+            },
+            "apple_pie": {
+                "precision": 0.40458015267175573,
+                "recall": 0.9814814814814815,
+                "f1-score": 0.572972972972973,
+                "support": 108.0
+            },
+            "accuracy": 0.4444444444444444,
+            "macro avg": {
+                "precision": 0.5423835618623721,
+                "recall": 0.4444444444444445,
+                "f1-score": 0.3730068319600856,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.542383561862372,
+                "recall": 0.4444444444444444,
+                "f1-score": 0.3730068319600856,
+                "support": 324.0
+            }
+        }
+    },
+    "Taco": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.4444444444444444,
+        "precision": 0.6363636363636364,
+        "recall": 0.19444444444444445,
+        "true_positive": 21,
+        "true_negative": 204,
+        "false_positive": 12,
+        "false_negative": 87,
+        "confusion_matrix": [
+            [
+                21,
+                11,
+                76
+            ],
+            [
+                11,
+                17,
+                80
+            ],
+            [
+                1,
+                1,
+                106
+            ]
+        ],
+        "classification_report": {
+            "Taco": {
+                "precision": 0.6363636363636364,
+                "recall": 0.19444444444444445,
+                "f1-score": 0.2978723404255319,
+                "support": 108.0
+            },
+            "Taquito": {
+                "precision": 0.5862068965517241,
+                "recall": 0.1574074074074074,
+                "f1-score": 0.24817518248175183,
+                "support": 108.0
+            },
+            "apple_pie": {
+                "precision": 0.40458015267175573,
+                "recall": 0.9814814814814815,
+                "f1-score": 0.572972972972973,
+                "support": 108.0
+            },
+            "accuracy": 0.4444444444444444,
+            "macro avg": {
+                "precision": 0.5423835618623721,
+                "recall": 0.4444444444444445,
+                "f1-score": 0.3730068319600856,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.542383561862372,
+                "recall": 0.4444444444444444,
+                "f1-score": 0.3730068319600856,
+                "support": 324.0
+            }
+        }
+    },
+    "Taquito": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.4444444444444444,
+        "precision": 0.5862068965517241,
+        "recall": 0.1574074074074074,
+        "true_positive": 17,
+        "true_negative": 204,
+        "false_positive": 12,
+        "false_negative": 91,
+        "confusion_matrix": [
+            [
+                21,
+                11,
+                76
+            ],
+            [
+                11,
+                17,
+                80
+            ],
+            [
+                1,
+                1,
+                106
+            ]
+        ],
+        "classification_report": {
+            "Taco": {
+                "precision": 0.6363636363636364,
+                "recall": 0.19444444444444445,
+                "f1-score": 0.2978723404255319,
+                "support": 108.0
+            },
+            "Taquito": {
+                "precision": 0.5862068965517241,
+                "recall": 0.1574074074074074,
+                "f1-score": 0.24817518248175183,
+                "support": 108.0
+            },
+            "apple_pie": {
+                "precision": 0.40458015267175573,
+                "recall": 0.9814814814814815,
+                "f1-score": 0.572972972972973,
+                "support": 108.0
+            },
+            "accuracy": 0.4444444444444444,
+            "macro avg": {
+                "precision": 0.5423835618623721,
+                "recall": 0.4444444444444445,
+                "f1-score": 0.3730068319600856,
+                "support": 324.0
+            },
+            "weighted avg": {
+                "precision": 0.542383561862372,
+                "recall": 0.4444444444444444,
+                "f1-score": 0.3730068319600856,
+                "support": 324.0
+            }
+        }
+    },
+    "burger": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.7525252525252525,
+        "precision": 0.8771929824561403,
+        "recall": 0.746268656716418,
+        "true_positive": 50,
+        "true_negative": 124,
+        "false_positive": 7,
+        "false_negative": 17,
+        "confusion_matrix": [
+            [
+                50,
+                16,
+                1
+            ],
+            [
+                2,
+                55,
+                5
+            ],
+            [
+                5,
+                20,
+                44
+            ]
+        ],
+        "classification_report": {
+            "burger": {
+                "precision": 0.8771929824561403,
+                "recall": 0.746268656716418,
+                "f1-score": 0.8064516129032258,
+                "support": 67.0
+            },
+            "butter_naan": {
+                "precision": 0.6043956043956044,
+                "recall": 0.8870967741935484,
+                "f1-score": 0.7189542483660131,
+                "support": 62.0
+            },
+            "chai": {
+                "precision": 0.88,
+                "recall": 0.6376811594202898,
+                "f1-score": 0.7394957983193278,
+                "support": 69.0
+            },
+            "accuracy": 0.7525252525252525,
+            "macro avg": {
+                "precision": 0.7871961956172483,
+                "recall": 0.7570155301100853,
+                "f1-score": 0.7549672198628555,
+                "support": 198.0
+            },
+            "weighted avg": {
+                "precision": 0.7927497843287317,
+                "recall": 0.7525252525252525,
+                "f1-score": 0.75572036134971,
+                "support": 198.0
+            }
+        }
+    },
+    "butter_naan": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.7525252525252525,
+        "precision": 0.6043956043956044,
+        "recall": 0.8870967741935484,
+        "true_positive": 55,
+        "true_negative": 100,
+        "false_positive": 36,
+        "false_negative": 7,
+        "confusion_matrix": [
+            [
+                50,
+                16,
+                1
+            ],
+            [
+                2,
+                55,
+                5
+            ],
+            [
+                5,
+                20,
+                44
+            ]
+        ],
+        "classification_report": {
+            "burger": {
+                "precision": 0.8771929824561403,
+                "recall": 0.746268656716418,
+                "f1-score": 0.8064516129032258,
+                "support": 67.0
+            },
+            "butter_naan": {
+                "precision": 0.6043956043956044,
+                "recall": 0.8870967741935484,
+                "f1-score": 0.7189542483660131,
+                "support": 62.0
+            },
+            "chai": {
+                "precision": 0.88,
+                "recall": 0.6376811594202898,
+                "f1-score": 0.7394957983193278,
+                "support": 69.0
+            },
+            "accuracy": 0.7525252525252525,
+            "macro avg": {
+                "precision": 0.7871961956172483,
+                "recall": 0.7570155301100853,
+                "f1-score": 0.7549672198628555,
+                "support": 198.0
+            },
+            "weighted avg": {
+                "precision": 0.7927497843287317,
+                "recall": 0.7525252525252525,
+                "f1-score": 0.75572036134971,
+                "support": 198.0
+            }
+        }
+    },
+    "chai": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.7525252525252525,
+        "precision": 0.88,
+        "recall": 0.6376811594202898,
+        "true_positive": 44,
+        "true_negative": 123,
+        "false_positive": 6,
+        "false_negative": 25,
+        "confusion_matrix": [
+            [
+                50,
+                16,
+                1
+            ],
+            [
+                2,
+                55,
+                5
+            ],
+            [
+                5,
+                20,
+                44
+            ]
+        ],
+        "classification_report": {
+            "burger": {
+                "precision": 0.8771929824561403,
+                "recall": 0.746268656716418,
+                "f1-score": 0.8064516129032258,
+                "support": 67.0
+            },
+            "butter_naan": {
+                "precision": 0.6043956043956044,
+                "recall": 0.8870967741935484,
+                "f1-score": 0.7189542483660131,
+                "support": 62.0
+            },
+            "chai": {
+                "precision": 0.88,
+                "recall": 0.6376811594202898,
+                "f1-score": 0.7394957983193278,
+                "support": 69.0
+            },
+            "accuracy": 0.7525252525252525,
+            "macro avg": {
+                "precision": 0.7871961956172483,
+                "recall": 0.7570155301100853,
+                "f1-score": 0.7549672198628555,
+                "support": 198.0
+            },
+            "weighted avg": {
+                "precision": 0.7927497843287317,
+                "recall": 0.7525252525252525,
+                "f1-score": 0.75572036134971,
+                "support": 198.0
+            }
+        }
+    },
+    "chapati": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3829787234042553,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 216,
+        "false_positive": 0,
+        "false_negative": 66,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                66
+            ],
+            [
+                0,
+                0,
+                108
+            ],
+            [
+                0,
+                0,
+                108
+            ]
+        ],
+        "classification_report": {
+            "chapati": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 66.0
+            },
+            "cheesecake": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "chicken_curry": {
+                "precision": 0.3829787234042553,
+                "recall": 1.0,
+                "f1-score": 0.5538461538461539,
+                "support": 108.0
+            },
+            "accuracy": 0.3829787234042553,
+            "macro avg": {
+                "precision": 0.1276595744680851,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.18461538461538463,
+                "support": 282.0
+            },
+            "weighted avg": {
+                "precision": 0.14667270258035311,
+                "recall": 0.3829787234042553,
+                "f1-score": 0.21211129296235678,
+                "support": 282.0
+            }
+        }
+    },
+    "cheesecake": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3829787234042553,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 174,
+        "false_positive": 0,
+        "false_negative": 108,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                66
+            ],
+            [
+                0,
+                0,
+                108
+            ],
+            [
+                0,
+                0,
+                108
+            ]
+        ],
+        "classification_report": {
+            "chapati": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 66.0
+            },
+            "cheesecake": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "chicken_curry": {
+                "precision": 0.3829787234042553,
+                "recall": 1.0,
+                "f1-score": 0.5538461538461539,
+                "support": 108.0
+            },
+            "accuracy": 0.3829787234042553,
+            "macro avg": {
+                "precision": 0.1276595744680851,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.18461538461538463,
+                "support": 282.0
+            },
+            "weighted avg": {
+                "precision": 0.14667270258035311,
+                "recall": 0.3829787234042553,
+                "f1-score": 0.21211129296235678,
+                "support": 282.0
+            }
+        }
+    },
+    "chicken_curry": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3829787234042553,
+        "precision": 0.3829787234042553,
+        "recall": 1.0,
+        "true_positive": 108,
+        "true_negative": 0,
+        "false_positive": 174,
+        "false_negative": 0,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                66
+            ],
+            [
+                0,
+                0,
+                108
+            ],
+            [
+                0,
+                0,
+                108
+            ]
+        ],
+        "classification_report": {
+            "chapati": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 66.0
+            },
+            "cheesecake": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 108.0
+            },
+            "chicken_curry": {
+                "precision": 0.3829787234042553,
+                "recall": 1.0,
+                "f1-score": 0.5538461538461539,
+                "support": 108.0
+            },
+            "accuracy": 0.3829787234042553,
+            "macro avg": {
+                "precision": 0.1276595744680851,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.18461538461538463,
+                "support": 282.0
+            },
+            "weighted avg": {
+                "precision": 0.14667270258035311,
+                "recall": 0.3829787234042553,
+                "f1-score": 0.21211129296235678,
+                "support": 282.0
+            }
+        }
+    },
+    "chole_bhature": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.41304347826086957,
+        "precision": 0.41304347826086957,
+        "recall": 1.0,
+        "true_positive": 76,
+        "true_negative": 0,
+        "false_positive": 108,
+        "false_negative": 0,
+        "confusion_matrix": [
+            [
+                76,
+                0,
+                0
+            ],
+            [
+                59,
+                0,
+                0
+            ],
+            [
+                49,
+                0,
+                0
+            ]
+        ],
+        "classification_report": {
+            "chole_bhature": {
+                "precision": 0.41304347826086957,
+                "recall": 1.0,
+                "f1-score": 0.5846153846153846,
+                "support": 76.0
+            },
+            "dal_makhani": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 59.0
+            },
+            "dhokla": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 49.0
+            },
+            "accuracy": 0.41304347826086957,
+            "macro avg": {
+                "precision": 0.13768115942028986,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.19487179487179487,
+                "support": 184.0
+            },
+            "weighted avg": {
+                "precision": 0.17060491493383742,
+                "recall": 0.41304347826086957,
+                "f1-score": 0.24147157190635454,
+                "support": 184.0
+            }
+        }
+    },
+    "dal_makhani": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.41304347826086957,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 125,
+        "false_positive": 0,
+        "false_negative": 59,
+        "confusion_matrix": [
+            [
+                76,
+                0,
+                0
+            ],
+            [
+                59,
+                0,
+                0
+            ],
+            [
+                49,
+                0,
+                0
+            ]
+        ],
+        "classification_report": {
+            "chole_bhature": {
+                "precision": 0.41304347826086957,
+                "recall": 1.0,
+                "f1-score": 0.5846153846153846,
+                "support": 76.0
+            },
+            "dal_makhani": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 59.0
+            },
+            "dhokla": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 49.0
+            },
+            "accuracy": 0.41304347826086957,
+            "macro avg": {
+                "precision": 0.13768115942028986,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.19487179487179487,
+                "support": 184.0
+            },
+            "weighted avg": {
+                "precision": 0.17060491493383742,
+                "recall": 0.41304347826086957,
+                "f1-score": 0.24147157190635454,
+                "support": 184.0
+            }
+        }
+    },
+    "dhokla": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.41304347826086957,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 135,
+        "false_positive": 0,
+        "false_negative": 49,
+        "confusion_matrix": [
+            [
+                76,
+                0,
+                0
+            ],
+            [
+                59,
+                0,
+                0
+            ],
+            [
+                49,
+                0,
+                0
+            ]
+        ],
+        "classification_report": {
+            "chole_bhature": {
+                "precision": 0.41304347826086957,
+                "recall": 1.0,
+                "f1-score": 0.5846153846153846,
+                "support": 76.0
+            },
+            "dal_makhani": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 59.0
+            },
+            "dhokla": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 49.0
+            },
+            "accuracy": 0.41304347826086957,
+            "macro avg": {
+                "precision": 0.13768115942028986,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.19487179487179487,
+                "support": 184.0
+            },
+            "weighted avg": {
+                "precision": 0.17060491493383742,
+                "recall": 0.41304347826086957,
+                "f1-score": 0.24147157190635454,
+                "support": 184.0
+            }
+        }
+    },
+    "fried_rice": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.7782426778242678,
+        "precision": 0.7816091954022989,
+        "recall": 0.9714285714285714,
+        "true_positive": 68,
+        "true_negative": 150,
+        "false_positive": 19,
+        "false_negative": 2,
+        "confusion_matrix": [
+            [
+                68,
+                2,
+                0
+            ],
+            [
+                14,
+                87,
+                7
+            ],
+            [
+                5,
+                25,
+                31
+            ]
+        ],
+        "classification_report": {
+            "fried_rice": {
+                "precision": 0.7816091954022989,
+                "recall": 0.9714285714285714,
+                "f1-score": 0.8662420382165605,
+                "support": 70.0
+            },
+            "ice_cream": {
+                "precision": 0.7631578947368421,
+                "recall": 0.8055555555555556,
+                "f1-score": 0.7837837837837838,
+                "support": 108.0
+            },
+            "idli": {
+                "precision": 0.8157894736842105,
+                "recall": 0.5081967213114754,
+                "f1-score": 0.6262626262626263,
+                "support": 61.0
+            },
+            "accuracy": 0.7782426778242678,
+            "macro avg": {
+                "precision": 0.7868521879411171,
+                "recall": 0.7617269494318674,
+                "f1-score": 0.7587628160876569,
+                "support": 239.0
+            },
+            "weighted avg": {
+                "precision": 0.7819952058764716,
+                "recall": 0.7782426778242678,
+                "f1-score": 0.7677305921582765,
+                "support": 239.0
+            }
+        }
+    },
+    "ice_cream": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.7782426778242678,
+        "precision": 0.7631578947368421,
+        "recall": 0.8055555555555556,
+        "true_positive": 87,
+        "true_negative": 104,
+        "false_positive": 27,
+        "false_negative": 21,
+        "confusion_matrix": [
+            [
+                68,
+                2,
+                0
+            ],
+            [
+                14,
+                87,
+                7
+            ],
+            [
+                5,
+                25,
+                31
+            ]
+        ],
+        "classification_report": {
+            "fried_rice": {
+                "precision": 0.7816091954022989,
+                "recall": 0.9714285714285714,
+                "f1-score": 0.8662420382165605,
+                "support": 70.0
+            },
+            "ice_cream": {
+                "precision": 0.7631578947368421,
+                "recall": 0.8055555555555556,
+                "f1-score": 0.7837837837837838,
+                "support": 108.0
+            },
+            "idli": {
+                "precision": 0.8157894736842105,
+                "recall": 0.5081967213114754,
+                "f1-score": 0.6262626262626263,
+                "support": 61.0
+            },
+            "accuracy": 0.7782426778242678,
+            "macro avg": {
+                "precision": 0.7868521879411171,
+                "recall": 0.7617269494318674,
+                "f1-score": 0.7587628160876569,
+                "support": 239.0
+            },
+            "weighted avg": {
+                "precision": 0.7819952058764716,
+                "recall": 0.7782426778242678,
+                "f1-score": 0.7677305921582765,
+                "support": 239.0
+            }
+        }
+    },
+    "idli": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.7782426778242678,
+        "precision": 0.8157894736842105,
+        "recall": 0.5081967213114754,
+        "true_positive": 31,
+        "true_negative": 171,
+        "false_positive": 7,
+        "false_negative": 30,
+        "confusion_matrix": [
+            [
+                68,
+                2,
+                0
+            ],
+            [
+                14,
+                87,
+                7
+            ],
+            [
+                5,
+                25,
+                31
+            ]
+        ],
+        "classification_report": {
+            "fried_rice": {
+                "precision": 0.7816091954022989,
+                "recall": 0.9714285714285714,
+                "f1-score": 0.8662420382165605,
+                "support": 70.0
+            },
+            "ice_cream": {
+                "precision": 0.7631578947368421,
+                "recall": 0.8055555555555556,
+                "f1-score": 0.7837837837837838,
+                "support": 108.0
+            },
+            "idli": {
+                "precision": 0.8157894736842105,
+                "recall": 0.5081967213114754,
+                "f1-score": 0.6262626262626263,
+                "support": 61.0
+            },
+            "accuracy": 0.7782426778242678,
+            "macro avg": {
+                "precision": 0.7868521879411171,
+                "recall": 0.7617269494318674,
+                "f1-score": 0.7587628160876569,
+                "support": 239.0
+            },
+            "weighted avg": {
+                "precision": 0.7819952058764716,
+                "recall": 0.7782426778242678,
+                "f1-score": 0.7677305921582765,
+                "support": 239.0
+            }
+        }
+    },
+    "jalebi": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.6408839779005525,
+        "precision": 1.0,
+        "recall": 0.22413793103448276,
+        "true_positive": 13,
+        "true_negative": 123,
+        "false_positive": 0,
+        "false_negative": 45,
+        "confusion_matrix": [
+            [
+                13,
+                8,
+                37
+            ],
+            [
+                0,
+                40,
+                16
+            ],
+            [
+                0,
+                4,
+                63
+            ]
+        ],
+        "classification_report": {
+            "jalebi": {
+                "precision": 1.0,
+                "recall": 0.22413793103448276,
+                "f1-score": 0.36619718309859156,
+                "support": 58.0
+            },
+            "kaathi_rolls": {
+                "precision": 0.7692307692307693,
+                "recall": 0.7142857142857143,
+                "f1-score": 0.7407407407407407,
+                "support": 56.0
+            },
+            "kadai_paneer": {
+                "precision": 0.5431034482758621,
+                "recall": 0.9402985074626866,
+                "f1-score": 0.6885245901639344,
+                "support": 67.0
+            },
+            "accuracy": 0.6408839779005525,
+            "macro avg": {
+                "precision": 0.7707780725022104,
+                "recall": 0.6262407175942946,
+                "f1-score": 0.5984875046677556,
+                "support": 181.0
+            },
+            "weighted avg": {
+                "precision": 0.7594743321072145,
+                "recall": 0.6408839779005525,
+                "f1-score": 0.6013926278573668,
+                "support": 181.0
+            }
+        }
+    },
+    "kaathi_rolls": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.6408839779005525,
+        "precision": 0.7692307692307693,
+        "recall": 0.7142857142857143,
+        "true_positive": 40,
+        "true_negative": 113,
+        "false_positive": 12,
+        "false_negative": 16,
+        "confusion_matrix": [
+            [
+                13,
+                8,
+                37
+            ],
+            [
+                0,
+                40,
+                16
+            ],
+            [
+                0,
+                4,
+                63
+            ]
+        ],
+        "classification_report": {
+            "jalebi": {
+                "precision": 1.0,
+                "recall": 0.22413793103448276,
+                "f1-score": 0.36619718309859156,
+                "support": 58.0
+            },
+            "kaathi_rolls": {
+                "precision": 0.7692307692307693,
+                "recall": 0.7142857142857143,
+                "f1-score": 0.7407407407407407,
+                "support": 56.0
+            },
+            "kadai_paneer": {
+                "precision": 0.5431034482758621,
+                "recall": 0.9402985074626866,
+                "f1-score": 0.6885245901639344,
+                "support": 67.0
+            },
+            "accuracy": 0.6408839779005525,
+            "macro avg": {
+                "precision": 0.7707780725022104,
+                "recall": 0.6262407175942946,
+                "f1-score": 0.5984875046677556,
+                "support": 181.0
+            },
+            "weighted avg": {
+                "precision": 0.7594743321072145,
+                "recall": 0.6408839779005525,
+                "f1-score": 0.6013926278573668,
+                "support": 181.0
+            }
+        }
+    },
+    "kadai_paneer": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.6408839779005525,
+        "precision": 0.5431034482758621,
+        "recall": 0.9402985074626866,
+        "true_positive": 63,
+        "true_negative": 61,
+        "false_positive": 53,
+        "false_negative": 4,
+        "confusion_matrix": [
+            [
+                13,
+                8,
+                37
+            ],
+            [
+                0,
+                40,
+                16
+            ],
+            [
+                0,
+                4,
+                63
+            ]
+        ],
+        "classification_report": {
+            "jalebi": {
+                "precision": 1.0,
+                "recall": 0.22413793103448276,
+                "f1-score": 0.36619718309859156,
+                "support": 58.0
+            },
+            "kaathi_rolls": {
+                "precision": 0.7692307692307693,
+                "recall": 0.7142857142857143,
+                "f1-score": 0.7407407407407407,
+                "support": 56.0
+            },
+            "kadai_paneer": {
+                "precision": 0.5431034482758621,
+                "recall": 0.9402985074626866,
+                "f1-score": 0.6885245901639344,
+                "support": 67.0
+            },
+            "accuracy": 0.6408839779005525,
+            "macro avg": {
+                "precision": 0.7707780725022104,
+                "recall": 0.6262407175942946,
+                "f1-score": 0.5984875046677556,
+                "support": 181.0
+            },
+            "weighted avg": {
+                "precision": 0.7594743321072145,
+                "recall": 0.6408839779005525,
+                "f1-score": 0.6013926278573668,
+                "support": 181.0
+            }
+        }
+    },
+    "kulfi": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3987730061349693,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 120,
+        "false_positive": 0,
+        "false_negative": 43,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                43
+            ],
+            [
+                0,
+                0,
+                55
+            ],
+            [
+                0,
+                0,
+                65
+            ]
+        ],
+        "classification_report": {
+            "kulfi": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 43.0
+            },
+            "masala_dosa": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 55.0
+            },
+            "momos": {
+                "precision": 0.3987730061349693,
+                "recall": 1.0,
+                "f1-score": 0.5701754385964912,
+                "support": 65.0
+            },
+            "accuracy": 0.3987730061349693,
+            "macro avg": {
+                "precision": 0.1329243353783231,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.19005847953216373,
+                "support": 163.0
+            },
+            "weighted avg": {
+                "precision": 0.1590199104219203,
+                "recall": 0.3987730061349693,
+                "f1-score": 0.22737057367344743,
+                "support": 163.0
+            }
+        }
+    },
+    "masala_dosa": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3987730061349693,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 108,
+        "false_positive": 0,
+        "false_negative": 55,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                43
+            ],
+            [
+                0,
+                0,
+                55
+            ],
+            [
+                0,
+                0,
+                65
+            ]
+        ],
+        "classification_report": {
+            "kulfi": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 43.0
+            },
+            "masala_dosa": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 55.0
+            },
+            "momos": {
+                "precision": 0.3987730061349693,
+                "recall": 1.0,
+                "f1-score": 0.5701754385964912,
+                "support": 65.0
+            },
+            "accuracy": 0.3987730061349693,
+            "macro avg": {
+                "precision": 0.1329243353783231,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.19005847953216373,
+                "support": 163.0
+            },
+            "weighted avg": {
+                "precision": 0.1590199104219203,
+                "recall": 0.3987730061349693,
+                "f1-score": 0.22737057367344743,
+                "support": 163.0
+            }
+        }
+    },
+    "momos": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3987730061349693,
+        "precision": 0.3987730061349693,
+        "recall": 1.0,
+        "true_positive": 65,
+        "true_negative": 0,
+        "false_positive": 98,
+        "false_negative": 0,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                43
+            ],
+            [
+                0,
+                0,
+                55
+            ],
+            [
+                0,
+                0,
+                65
+            ]
+        ],
+        "classification_report": {
+            "kulfi": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 43.0
+            },
+            "masala_dosa": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 55.0
+            },
+            "momos": {
+                "precision": 0.3987730061349693,
+                "recall": 1.0,
+                "f1-score": 0.5701754385964912,
+                "support": 65.0
+            },
+            "accuracy": 0.3987730061349693,
+            "macro avg": {
+                "precision": 0.1329243353783231,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.19005847953216373,
+                "support": 163.0
+            },
+            "weighted avg": {
+                "precision": 0.1590199104219203,
+                "recall": 0.3987730061349693,
+                "f1-score": 0.22737057367344743,
+                "support": 163.0
+            }
+        }
+    },
+    "omelette": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.6858638743455497,
+        "precision": 0.7777777777777778,
+        "recall": 0.8425925925925926,
+        "true_positive": 91,
+        "true_negative": 57,
+        "false_positive": 26,
+        "false_negative": 17,
+        "confusion_matrix": [
+            [
+                91,
+                1,
+                16
+            ],
+            [
+                10,
+                5,
+                14
+            ],
+            [
+                16,
+                3,
+                35
+            ]
+        ],
+        "classification_report": {
+            "omelette": {
+                "precision": 0.7777777777777778,
+                "recall": 0.8425925925925926,
+                "f1-score": 0.8088888888888889,
+                "support": 108.0
+            },
+            "paani_puri": {
+                "precision": 0.5555555555555556,
+                "recall": 0.1724137931034483,
+                "f1-score": 0.2631578947368421,
+                "support": 29.0
+            },
+            "pakode": {
+                "precision": 0.5384615384615384,
+                "recall": 0.6481481481481481,
+                "f1-score": 0.5882352941176471,
+                "support": 54.0
+            },
+            "accuracy": 0.6858638743455497,
+            "macro avg": {
+                "precision": 0.6239316239316239,
+                "recall": 0.5543848446147297,
+                "f1-score": 0.5534273592477926,
+                "support": 191.0
+            },
+            "weighted avg": {
+                "precision": 0.6763771423457287,
+                "recall": 0.6858638743455497,
+                "f1-score": 0.6636454703126773,
+                "support": 191.0
+            }
+        }
+    },
+    "paani_puri": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.6858638743455497,
+        "precision": 0.5555555555555556,
+        "recall": 0.1724137931034483,
+        "true_positive": 5,
+        "true_negative": 158,
+        "false_positive": 4,
+        "false_negative": 24,
+        "confusion_matrix": [
+            [
+                91,
+                1,
+                16
+            ],
+            [
+                10,
+                5,
+                14
+            ],
+            [
+                16,
+                3,
+                35
+            ]
+        ],
+        "classification_report": {
+            "omelette": {
+                "precision": 0.7777777777777778,
+                "recall": 0.8425925925925926,
+                "f1-score": 0.8088888888888889,
+                "support": 108.0
+            },
+            "paani_puri": {
+                "precision": 0.5555555555555556,
+                "recall": 0.1724137931034483,
+                "f1-score": 0.2631578947368421,
+                "support": 29.0
+            },
+            "pakode": {
+                "precision": 0.5384615384615384,
+                "recall": 0.6481481481481481,
+                "f1-score": 0.5882352941176471,
+                "support": 54.0
+            },
+            "accuracy": 0.6858638743455497,
+            "macro avg": {
+                "precision": 0.6239316239316239,
+                "recall": 0.5543848446147297,
+                "f1-score": 0.5534273592477926,
+                "support": 191.0
+            },
+            "weighted avg": {
+                "precision": 0.6763771423457287,
+                "recall": 0.6858638743455497,
+                "f1-score": 0.6636454703126773,
+                "support": 191.0
+            }
+        }
+    },
+    "pakode": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.6858638743455497,
+        "precision": 0.5384615384615384,
+        "recall": 0.6481481481481481,
+        "true_positive": 35,
+        "true_negative": 107,
+        "false_positive": 30,
+        "false_negative": 19,
+        "confusion_matrix": [
+            [
+                91,
+                1,
+                16
+            ],
+            [
+                10,
+                5,
+                14
+            ],
+            [
+                16,
+                3,
+                35
+            ]
+        ],
+        "classification_report": {
+            "omelette": {
+                "precision": 0.7777777777777778,
+                "recall": 0.8425925925925926,
+                "f1-score": 0.8088888888888889,
+                "support": 108.0
+            },
+            "paani_puri": {
+                "precision": 0.5555555555555556,
+                "recall": 0.1724137931034483,
+                "f1-score": 0.2631578947368421,
+                "support": 29.0
+            },
+            "pakode": {
+                "precision": 0.5384615384615384,
+                "recall": 0.6481481481481481,
+                "f1-score": 0.5882352941176471,
+                "support": 54.0
+            },
+            "accuracy": 0.6858638743455497,
+            "macro avg": {
+                "precision": 0.6239316239316239,
+                "recall": 0.5543848446147297,
+                "f1-score": 0.5534273592477926,
+                "support": 191.0
+            },
+            "weighted avg": {
+                "precision": 0.6763771423457287,
+                "recall": 0.6858638743455497,
+                "f1-score": 0.6636454703126773,
+                "support": 191.0
+            }
+        }
+    },
+    "pav_bhaji": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3956043956043956,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 212,
+        "false_positive": 0,
+        "false_negative": 61,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                61
+            ],
+            [
+                0,
+                0,
+                0,
+                55
+            ],
+            [
+                0,
+                0,
+                0,
+                49
+            ],
+            [
+                0,
+                0,
+                0,
+                108
+            ]
+        ],
+        "classification_report": {
+            "pav_bhaji": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 61.0
+            },
+            "pizza": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 55.0
+            },
+            "samosa": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 49.0
+            },
+            "sushi": {
+                "precision": 0.3956043956043956,
+                "recall": 1.0,
+                "f1-score": 0.5669291338582677,
+                "support": 108.0
+            },
+            "accuracy": 0.3956043956043956,
+            "macro avg": {
+                "precision": 0.0989010989010989,
+                "recall": 0.25,
+                "f1-score": 0.14173228346456693,
+                "support": 273.0
+            },
+            "weighted avg": {
+                "precision": 0.15650283782151914,
+                "recall": 0.3956043956043956,
+                "f1-score": 0.2242796573505235,
+                "support": 273.0
+            }
+        }
+    },
+    "pizza": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3956043956043956,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 218,
+        "false_positive": 0,
+        "false_negative": 55,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                61
+            ],
+            [
+                0,
+                0,
+                0,
+                55
+            ],
+            [
+                0,
+                0,
+                0,
+                49
+            ],
+            [
+                0,
+                0,
+                0,
+                108
+            ]
+        ],
+        "classification_report": {
+            "pav_bhaji": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 61.0
+            },
+            "pizza": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 55.0
+            },
+            "samosa": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 49.0
+            },
+            "sushi": {
+                "precision": 0.3956043956043956,
+                "recall": 1.0,
+                "f1-score": 0.5669291338582677,
+                "support": 108.0
+            },
+            "accuracy": 0.3956043956043956,
+            "macro avg": {
+                "precision": 0.0989010989010989,
+                "recall": 0.25,
+                "f1-score": 0.14173228346456693,
+                "support": 273.0
+            },
+            "weighted avg": {
+                "precision": 0.15650283782151914,
+                "recall": 0.3956043956043956,
+                "f1-score": 0.2242796573505235,
+                "support": 273.0
+            }
+        }
+    },
+    "samosa": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.3956043956043956,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 224,
+        "false_positive": 0,
+        "false_negative": 49,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                61
+            ],
+            [
+                0,
+                0,
+                0,
+                55
+            ],
+            [
+                0,
+                0,
+                0,
+                49
+            ],
+            [
+                0,
+                0,
+                0,
+                108
+            ]
+        ],
+        "classification_report": {
+            "pav_bhaji": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 61.0
+            },
+            "pizza": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 55.0
+            },
+            "samosa": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 49.0
+            },
+            "sushi": {
+                "precision": 0.3956043956043956,
+                "recall": 1.0,
+                "f1-score": 0.5669291338582677,
+                "support": 108.0
+            },
+            "accuracy": 0.3956043956043956,
+            "macro avg": {
+                "precision": 0.0989010989010989,
+                "recall": 0.25,
+                "f1-score": 0.14173228346456693,
+                "support": 273.0
+            },
+            "weighted avg": {
+                "precision": 0.15650283782151914,
+                "recall": 0.3956043956043956,
+                "f1-score": 0.2242796573505235,
+                "support": 273.0
+            }
+        }
+    },
+    "sushi": {
+        "model_used": "resnet50_models",
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positive": 0,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0
+            ]
+        ],
+        "classification_report": {}
+    }
+}
